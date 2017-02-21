@@ -1,0 +1,32 @@
+ <script src='app/app.component.ts'></script>
+   
+  <!-- 3. Display the application -->
+  <body  ng-app="app" ng-controller="ctrl">
+  <div id="u234" class="text" style="top: 41px; position: absolute;top: 0%;right: 0%;">
+  <a (click)="logout()" href="#">Logout</a></div>
+  
+  
+   	  <ul class="nav nav-tabs">
+		<li ng-class="{'active' : activeTab == 1}"><a href="/cm" ng-click="setActiveTab(1)">Configuration Manager</a></li>
+		<li ng-class="{'active' : activeTab == 2}"><a href="/mte" ng-click="setActiveTab(2)">MTE manager</a></li>
+	  </ul>
+	  
+	  <div class="tab-content">
+		<div ng-class="{'tab-pane active': activeTab === 1, 'tab-pane' : activeTab !== 1}"></div>
+		<div ng-class="{'tab-pane active': activeTab === 2, 'tab-pane' : activeTab !== 2}"></div>
+	  </div>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	  <script>
+	  	angular.module("app", [])
+			.controller("ctrl", ['$scope', function($scope) {
+				$scope.activeTab = 1;
+				
+				$scope.setActiveTab = function(tabToSet) {
+					$scope.activeTab = tabToSet;
+				}
+			}]);
+	  </script>   
+  </body>
+<div class="blue-slider"></div>
+
+

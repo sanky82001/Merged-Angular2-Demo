@@ -1,0 +1,48 @@
+.container{
+	width:600px;
+	height:350px;
+	margin:100px auto;
+	box-shadow: 2px 3px 15px -8px;
+}
+
+.content{
+	height:250px;
+	text-align: center;
+	padding: 70px;
+}
+
+.content span{
+	margin-bottom: 30px;
+}
+
+.title{
+	width:100%;
+	height:90px;
+	font-size: 28px;
+	color: white;
+	padding: 20px;
+	background: #26A69A;
+}
+
+.panel-body{
+	padding: 15px;
+}
+
+.panel-body span{
+	color:red;
+}
+.panel-body button{
+	float:right;
+}
+
+.blue-slider {
+    background: url(../img/worlds-most-ethical-transparent.png);
+    background-color: #3a5a78;
+    background-size: 1200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 40px 0;
+    color: #fff;
+	align-self: flex-end;
+}

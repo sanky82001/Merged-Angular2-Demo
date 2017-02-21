@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <base href="/">
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/xlsx/dist/xlsx.core.min.js"></script>
+<!-- JSZip library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+
+<script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> 
+ 
+          
+    <link rel="stylesheet" src="style.css"></link>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+    //     paths: {
+    //   // paths serve as alias
+    //   "ng2-charts/ng2-charts": "node_modules/ng2-charts/ng2-charts"
+    // },
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+      //     },
+      // "node_modules/ng2-charts/ng2-charts": { defaultExtension: 'js' }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+  	 <div id="u233" class="ax_image">
+        <img id="u233_img" class="img " src="./images/hartford.jpg"/>
+        <div id="u234" class="text" style="top: 41px; transform-origin: 39.5px 0px 0px;">
+          <p><span></span></p>
+        </div>
+      </div>
+  <img id="u229_img" class="img " src="./images/headerblue.png"/>
+    <my-app>Loading...</my-app>
+  </body>
+
+</html>
