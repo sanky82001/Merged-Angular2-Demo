@@ -1,4 +1,4 @@
-System.register(['angular2/core', '@angular/http'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,12 @@ System.register(['angular2/core', '@angular/http'], function(exports_1, context_
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1;
+    var core_1;
     var MTEComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (http_1_1) {
-                http_1 = http_1_1;
             }],
         execute: function() {
             MTEComponent = (function () {
@@ -54,7 +51,7 @@ System.register(['angular2/core', '@angular/http'], function(exports_1, context_
                         var headers = new Headers();
                         headers.append('Content-Type', 'multipart/form-data');
                         headers.append('Accept', 'application/json');
-                        var options = new http_1.RequestOptions({ headers: headers });
+                        var options = new RequestOptions({ headers: headers });
                         this.http.post("" + this.apiEndPoint, formData, options)
                             .map(function (res) { return res.json(); })
                             .catch(function (error) { return Observable.throw(error); })

@@ -1,6 +1,6 @@
     import {Component} from 'angular2/core';
     import { ChartsModule } from 'ng2-charts/ng2-charts';
-    import {RequestOptions, Request, RequestMethod} from '@angular/http';
+    //import {RequestOptions, Request, RequestMethod} from '@angular/http';
 
     declare var XLSX: any;
 
